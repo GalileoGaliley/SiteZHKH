@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+@media (min-width:800px){
+  .leftBlock{
+    width: 30%;
+  }
+  .rightBlock{
+    width: 70%;
+  }
+  .openMenu{
+    display: none;
+  }
+}
+@media (max-width:800px){
+  .blocks{
+    flex-direction: column;
+  }
+  .logo img{
+    max-width: 300px;
+  }
+  .menu{
+    height: 500px;
+    overflow: hidden;
+  }
+  .open{
+    animation-name: open;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  .close{
+    animation-name: close;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+}
+.logo{
+  width: 100%;
+  display: flex;
+}
+.logo img{
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.header{
+  height: 180px;
+}
+.leftBlock{
+  background: linear-gradient(274deg, white, #bedbe8);
+}
+.headerImage{
+  background-image: url("./Images/temryk.jpeg");
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position-y: -67px;
+  background-size: cover;
+  position: relative;
+}
+.rightBlock{
+  position: relative;
+}
+.grad{
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(90deg, #f5f9fb, rgba(0,0,0,0%));
+}
+.DropItem button{
+  width: 250px;
+  color: #e48837;
+  border: 1.5px solid #e48837;
+  background-color: #fff;
+  white-space: normal !important;
+  box-shadow: 7px 7px 4px rgba(151, 176, 216, 0.5);
+}
+.DropItem button:hover{
+  width: 250px;
+  color: #fff;
+  border: 1.5px solid #e48837;
+  background-color: #e48837;
+}
+
+.btn-check:active+.myVariant, .btn-check:checked+.myVariant, .btn-success.myVariant, .btn-myVariant:active, .show>.btn-myVariant.dropdown-toggle{
+  background-color: #c06b1c;
+  color: #fff;
+}
+.DropItem{
+  margin-top: 20px;
+}
+
+@keyframes open {
+  0%{
+    height: 0px;
+  }
+  100%{
+    height: 500px;
+  }
+}
+@keyframes close {
+  0%{
+    height: 500px;
+  }
+  100%{
+    height: 0px;
+  }
+}
+
+
+
+
