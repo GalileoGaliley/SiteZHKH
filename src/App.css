@@ -58,7 +58,7 @@
   background: linear-gradient(274deg, white, #bedbe8);
 }
 .headerImage{
-  background-image: url("./Images/temryk.jpeg");
+  background-image: url("./Images/MUP.jpeg");
   width: 100%;
   height: 200px;
   background-repeat: no-repeat;
@@ -97,7 +97,21 @@
 .DropItem{
   margin-top: 20px;
 }
+.footer{
+  height: 150px;
+  background: rgb(210, 226, 239);
+}
+.table1 td{
+  border: 1px solid #000 !important;
 
+}
+.italic{
+  font-style: italic;
+}
+.table2 {
+  border: none;
+  border-collapse: collapse;
+}
 @keyframes open {
   0%{
     height: 0px;
