@@ -10,13 +10,13 @@ const LeftBlock = observer(() => {
     const [open, setOpen] = useState('close');
 
     let arr = [
-        {title: 'Главная', items:[{text:'История', value:'mainHistory'}, {text: 'Руководство', value:'mainBoss'}, {text: 'Фото галерея', value:'mainGallery'}], value:'main'},
-        {title: 'Водоснабжение', items:[{text: 'Нормативные правила', value:'waterInRules'}, {text:'Текущие показатели', value:'waterInData'}], value:'waterIn'},
-        {title: 'Водоотведение', items:[{text: 'Характеристика и текущие показатели', value:'waterOutCharacter'}, {text: 'Текущие показатели', value:'waterOutData'}], value:'waterOut'},
-        {title: 'Подключение к сетям водоснабжения и водоотведения', items:[{text: 'Порядок подключения', value:'connectWaterInOutAlgoritm'}, {text: 'Документы', value:'connectWaterInOutDocumentation'}], value:'connectWaterInOut'},
-        {title: 'Для абонентов', items:[{text: 'Информация по оплате', value:'forAbonentsInfo'}, {text: 'Расценки по прочим видам деятельности', value:'forAbonentsPrice'}], value:'forAbonents'},
-        {title: 'Раскрытие информации', items:[{text: 'Тарифы по воодснабжению и водоотведению', value:'priceWaterInOut1'}], value:'waterInOut'},
-        {title: 'Контакты', items:[{text: 'Ответственные лица', value:'contactsPersonal'}, {text: 'Обратная связь', value:'contactsConnections'}], value:'contacts'}
+        {title: 'Главная', items:[{title:'title',text:'История', value:'mainHistory'}, {title:'title',text: 'Руководство', value:'mainBoss'}, {title:'title',text: 'Фото галерея', value:'mainGallery'}], value:'main'},
+        {title: 'Водоснабжение', items:[{title:'title',text: 'Нормативные правила', value:'waterInRules'}, {title:'title',text:'Текущие показатели', value:'waterInData'}], value:'waterIn'},
+        {title: 'Водоотведение', items:[{tetle:'title',text: 'Характеристика и текущие показатели', value:'waterOutCharacter'}], value:'waterOut'},
+        {title: 'Подключение к сетям водоснабжения и водоотведения', items:[{title:'title',text: 'Порядок подключения', value:'connectWaterInOutAlgoritm'}, {title:'title',text: 'Документы', value:'connectWaterInOutDocumentation'}], value:'connectWaterInOut'},
+        {title: 'Для абонентов', items:[{title:'title',text: 'Информация по оплате', value:'forAbonentsInfo'}, {title:'title',text: 'Расценки по прочим видам деятельности', value:'forAbonentsPrice'}], value:'forAbonents'},
+        {title: 'Раскрытие информации', items:[{title:'title',text: 'Тарифы по воодснабжению и водоотведению', value:'priceWaterInOut1'}], value:'waterInOut'},
+        {title: 'Контакты', items:[{title:'title',text: 'Ответственные лица', value:'contactsPersonal'}, {title:'title',text: 'Обратная связь', value:'contactsConnections'}], value:'contacts'}
     ]
     return (
         <div className={'leftBlock '}>
@@ -48,15 +48,7 @@ const LeftBlock = observer(() => {
 
 
             </div>
-            <div className={'d-flex flex-column align-items-center'}>
-                <hr className={'w-100'}/>
-                <h2>Новости</h2>
-                <p className={'w-75 m-auto'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi non quaerat quia, rem suscipit
-                    voluptas. Ab accusantium adipisci aperiam at atque consequuntur culpa dolore doloribus earum eveniet
-                    expedita fuga ipsam ipsum iste iure iusto numquam obcaecati odio officia omnis optio pariatur
-                    possimus provident quae quaerat reiciendis tempore temporibus, ullam voluptate!</p>
-                <hr className={'w-100'}/>
-            </div>
+
         </div>
     );
 });
