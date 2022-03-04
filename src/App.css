@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+@font-face {
+  font-family: "MusticaproSemibold";
+  src: local("MusticaproSemibold"),
+  url(fonts/MusticaproSemibold.otf);
+}
 @media (min-width:800px){
   .blocks{
     min-height: calc(100vh - 100px);
@@ -15,12 +20,31 @@
     display: none;
   }
 }
+.MusticaproSemibold{
+  font-family: "MusticaproSemibold";
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 4.5em;
+  color: #fff;
+  padding: 5%;
+}
 @media (max-width:500px){
   .foot{
     flex-direction: column;
   }
   .dripOtem{
     font-size: 14px;
+  }
+}
+@media (max-width:990px){
+  .MusticaproSemibold{
+    font-size: 3.5em;
+  }
+}
+@media (max-width:600px){
+  .MusticaproSemibold{
+    font-size: 2em;
   }
 }
 @media (max-width:800px){
@@ -69,11 +93,11 @@
   background: linear-gradient(274deg, white, #bedbe8);
 }
 .headerImage{
-  background-image: url("./Images/MUP.jpeg");
+  background-image: url("./Images/river.jpeg");
   width: 100%;
   height: 200px;
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position: center;
   background-size: cover;
   position: relative;
 }

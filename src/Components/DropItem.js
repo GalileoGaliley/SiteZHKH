@@ -6,7 +6,7 @@ import {Context} from "../index";
 const DropItem = observer(({i}) => {
     const {text} = useContext(Context)
     return (
-        <DropdownButton className={'DropItem'} title={i.title} align={{ lg: 'end' }} id="dropdown-menu-align-responsive-1" variant={'myVariant'} >
+        <DropdownButton className={'DropItem'} title={i.title}   variant={'myVariant'} >
             {i.items.map((item)=><Dropdown.Item className={'dripOtem'} onClick={()=>{text.setPage(item.value);text.setTitle(item.text)}} eventKey="1">{item.text}</Dropdown.Item>)}
         </DropdownButton>
     );
